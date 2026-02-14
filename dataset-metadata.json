@@ -1,0 +1,18 @@
+{
+  "title": "Witnessed Meteorite Falls - NASA Catalog",
+  "id": "lucassteuber/witnessed-meteorite-falls-nasa",
+  "licenses": [{"name": "CC0-1.0"}],
+  "subtitle": "1,097 meteorites observed falling to Earth (1688-2013)",
+  "description": "NASA meteorite catalog filtered to witnessed falls only. Unlike discovered meteorites, witnessed falls have documented fall dates, trajectories, and fresh samples uncontaminated by terrestrial weathering.",
+  "isPrivate": false,
+  "keywords": [
+    "meteorites",
+    "nasa",
+    "astronomy",
+    "space",
+    "geospatial",
+    "earth-science",
+    "observed-events",
+    "planetary-science"
+  ]
+}
