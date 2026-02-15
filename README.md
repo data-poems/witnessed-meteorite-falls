@@ -53,19 +53,9 @@ dataset_info:
 - Petrologic classifications
 - Mass where available
 
-## Why Witnessed Falls Matter
+## Witnessed vs Found
 
-Most meteorites are "finds" - discovered long after landing. Witnessed falls are special:
-
-| Aspect | Witnessed Fall | Found |
-|--------|----------------|-------|
-| Fall Date | Exact | Unknown |
-| Trajectory | Often documented | Unknown |
-| Contamination | Minimal | Years of weathering |
-| Scientific Value | Highest | Lower |
-| Rarity | ~3% of catalog | ~97% |
-
-Witnessed falls provide pristine samples for studying the early solar system.
+Most meteorites are "finds" -- discovered long after landing. Witnessed falls make up about 3% of the catalog but have exact fall dates, documented trajectories, and minimal contamination from weathering.
 
 ## Filtering Criteria
 
@@ -97,12 +87,12 @@ Witnessed falls provide pristine samples for studying the early solar system.
 }
 ```
 
-## Famous Witnessed Falls
+## Notable Witnessed Falls
 
-- **Murchison (1969)** - Australia, CM2 carbonaceous chondrite, amino acids discovered
-- **Allende (1969)** - Mexico, CV3, oldest material in solar system
-- **Peekskill (1992)** - New York, caught on video hitting a car
-- **Chelyabinsk (2013)** - Russia, largest airburst since Tunguska
+- Murchison (1969) -- Australia, CM2 carbonaceous chondrite, amino acids discovered
+- Allende (1969) -- Mexico, CV3, oldest material in solar system
+- Peekskill (1992) -- New York, caught on video hitting a car
+- Chelyabinsk (2013) -- Russia, largest airburst since Tunguska
 
 ## Usage
 
@@ -126,9 +116,7 @@ by_century = df.groupby('century').size()
 
 ## Source & License
 
-**Public Domain** - U.S. Government Work
-
-Data from NASA Meteoritical Bulletin via Open Data Portal.
+Public Domain -- U.S. Government Work. Data from NASA Meteoritical Bulletin via Open Data Portal.
 
 https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh
 
