@@ -53,6 +53,12 @@ with open('data.json') as f:
 }
 ```
 
+
+## Distribution
+
+- **GitHub**: [lukeslp/witnessed-meteorite-falls](https://github.com/lukeslp/witnessed-meteorite-falls)
+- **Kaggle**: [lucassteuber/witnessed-meteorite-falls](https://www.kaggle.com/datasets/lucassteuber/witnessed-meteorite-falls)
+
 ## Author
 
 **Luke Steuber**
