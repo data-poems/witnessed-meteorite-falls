@@ -20,7 +20,7 @@ The underlying data comes from **NASA Meteoritical Bulletin**, which is a U.S. G
 
 ```
 Steuber, L. (2026). Witnessed Meteorite Falls - NASA Catalog [Dataset].
-Kaggle. https://www.kaggle.com/datasets/lucassteuber/witnessed-meteorite-falls-nasa
+Hugging Face. https://huggingface.co/datasets/lukeslp/witnessed-meteorite-falls
 ```
 
 Original data: NASA Open Data Portal

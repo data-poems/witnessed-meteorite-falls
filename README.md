@@ -49,13 +49,12 @@ dataset_info:
 
 - 1,097 witnessed falls (not discovered finds)
 - 325 years of documented observations
-- Precise fall dates and locations
+- Fall year and location for each
 - Petrologic classifications
-- Mass where available
 
 ## Witnessed vs Found
 
-Most meteorites are "finds" -- discovered long after landing. Witnessed falls make up about 3% of the catalog but have exact fall dates, documented trajectories, and minimal contamination from weathering.
+Most meteorites are "finds", discovered long after they landed. Witnessed falls make up about 3% of the catalog. Scientists value them because the fall was seen, so the date is known and the rock was collected before weather could alter it.
 
 ## Filtering Criteria
 
@@ -75,24 +74,28 @@ Most meteorites are "finds" -- discovered long after landing. Witnessed falls ma
 
 ```json
 {
-  "latitude": 44.8833,
-  "longitude": -93.2,
+  "latitude": -36.61667,
+  "longitude": 145.2,
   "name": "Murchison",
-  "description": "CM2 - 100000g",
+  "description": "Meteorite Murchison - CM2. Mass: Unknown. Found: Fell.",
   "category": "witnessed_meteorite_falls",
-  "date": "1969-09-28",
-  "mass_g": 100000,
+  "date": "1969-01-01",
+  "country": null,
+  "mass_g": null,
   "meteorite_class": "CM2",
   "fall_type": "Fell"
 }
 ```
 
+- This file holds a year, not a day. `date` is that year written as January 1, and 19 records have no year.
+- `mass_g` and `country` are empty in every record. For masses, use the [large meteorites dataset](https://huggingface.co/datasets/lukeslp/large-meteorites), which keeps them for specimens of 1 kg and up.
+
 ## Notable Witnessed Falls
 
-- Murchison (1969) -- Australia, CM2 carbonaceous chondrite, amino acids discovered
-- Allende (1969) -- Mexico, CV3, oldest material in solar system
-- Peekskill (1992) -- New York, caught on video hitting a car
-- Chelyabinsk (2013) -- Russia, largest airburst since Tunguska
+- Murchison (1969): Australia, CM2 carbonaceous chondrite, amino acids discovered
+- Allende (1969): Mexico, CV3, oldest material in the solar system
+- Peekskill (1992): New York, caught on video hitting a car
+- Chelyabinsk (2013): Russia, largest airburst since Tunguska
 
 ## Usage
 
@@ -116,19 +119,12 @@ by_century = df.groupby('century').size()
 
 ## Source & License
 
-Public Domain -- U.S. Government Work. Data from NASA Meteoritical Bulletin via Open Data Portal.
-
-https://data.nasa.gov/dataset/meteorite-landings
+Public domain (U.S. government work). Data from the Meteoritical Bulletin by way of NASA's Open Data Portal. The portal page it came from (data.nasa.gov/dataset/meteorite-landings) is no longer online.
 
 ## Distribution
 
-- **Kaggle**: [lucassteuber/witnessed-meteorite-falls](https://www.kaggle.com/datasets/lucassteuber/witnessed-meteorite-falls)
 - **HuggingFace**: [lukeslp/witnessed-meteorite-falls](https://huggingface.co/datasets/lukeslp/witnessed-meteorite-falls)
 - **GitHub Gist**: [Demo Notebook](https://gist.github.com/lukeslp/795a4f4b59954b3f30f3b80a7c77a481)
-
-## Author
-
-Luke Steuber | luke@lukesteuber.com | @lukesteuber.com (Bluesky)
 
 ## Structured Data (JSON-LD)
 
@@ -138,8 +134,7 @@ Luke Steuber | luke@lukesteuber.com | @lukesteuber.com (Bluesky)
   "@type": "Dataset",
   "name": "Witnessed Meteorite Falls - NASA Catalog",
   "description": "1,097 meteorites observed falling to Earth from 1688 to 2013. Witnessed falls are scientifically valuable due to minimal contamination and known fall dates.",
-  "url": "https://www.kaggle.com/datasets/lucassteuber/witnessed-meteorite-falls",
-  "sameAs": "https://huggingface.co/datasets/lukeslp/witnessed-meteorite-falls",
+  "url": "https://huggingface.co/datasets/lukeslp/witnessed-meteorite-falls",
   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
   "creator": {
     "@type": "Person",
@@ -156,7 +151,7 @@ Luke Steuber | luke@lukesteuber.com | @lukesteuber.com (Bluesky)
     {
       "@type": "DataDownload",
       "encodingFormat": "application/json",
-      "contentUrl": "https://www.kaggle.com/datasets/lucassteuber/witnessed-meteorite-falls"
+      "contentUrl": "https://huggingface.co/datasets/lukeslp/witnessed-meteorite-falls"
     }
   ]
 }
